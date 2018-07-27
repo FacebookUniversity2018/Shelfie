@@ -10,6 +10,7 @@
 		1CB34EE3CBA3F181D99D0E7E /* libPods-ShelfieUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F719773C09E2D8DE0D6E7A7 /* libPods-ShelfieUITests.a */; };
 		1DBB1563D08D47B1F56AF237 /* libPods-ShelfieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B92B7D26D69A1813814CB93A /* libPods-ShelfieTests.a */; };
 		71D688D6EDFCE2C170FC9AB9 /* libPods-Shelfie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91916D5EC8BB09BF43594A /* libPods-Shelfie.a */; };
+		A4CDB871210B90C300203822 /* FBLoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CDB870210B90C300203822 /* FBLoginAPI.m */; };
 		B197F831210A6E10004805D8 /* BTSideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F830210A6E10004805D8 /* BTSideTableViewController.m */; };
 		B197F83C210A7D40004805D8 /* BTAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83B210A7D40004805D8 /* BTAddBookViewController.m */; };
 		B197F83F210A8113004805D8 /* BTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83E210A8113004805D8 /* BTLoginViewController.m */; };
@@ -48,6 +49,8 @@
 		10813C9F4B276CA39651A6CF /* Pods-Shelfie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelfie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shelfie/Pods-Shelfie.debug.xcconfig"; sourceTree = "<group>"; };
 		4AC6ED6AF88CE7E9EC2CE6EF /* Pods-ShelfieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelfieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShelfieTests/Pods-ShelfieTests.release.xcconfig"; sourceTree = "<group>"; };
 		597273F60C3FFCE4839282BC /* Pods-ShelfieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelfieUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShelfieUITests/Pods-ShelfieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4CDB86F210B90C300203822 /* FBLoginAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLoginAPI.h; sourceTree = "<group>"; };
+		A4CDB870210B90C300203822 /* FBLoginAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLoginAPI.m; sourceTree = "<group>"; };
 		B197F82F210A6E10004805D8 /* BTSideTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSideTableViewController.h; sourceTree = "<group>"; };
 		B197F830210A6E10004805D8 /* BTSideTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSideTableViewController.m; sourceTree = "<group>"; };
 		B197F83A210A7D40004805D8 /* BTAddBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAddBookViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		B197F844210A82E8004805D8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A4CDB86F210B90C300203822 /* FBLoginAPI.h */,
+				A4CDB870210B90C300203822 /* FBLoginAPI.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				CECB9BA4210A4E3D001D2032 /* main.m in Sources */,
 				CECB9B96210A4E3C001D2032 /* AppDelegate.m in Sources */,
 				B197F83C210A7D40004805D8 /* BTAddBookViewController.m in Sources */,
+				A4CDB871210B90C300203822 /* FBLoginAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
