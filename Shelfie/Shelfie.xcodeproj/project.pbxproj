@@ -13,6 +13,7 @@
 		A4526256210B9B0800811262 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4526255210B9B0800811262 /* SWRevealViewController.m */; };
 		A4526259210B9FBA00811262 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A4526258210B9FBA00811262 /* User.m */; };
 		A4CDB871210B90C300203822 /* FBLoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CDB870210B90C300203822 /* FBLoginAPI.m */; };
+		B11D37BB210BCFA90022AEAE /* CustomNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11D37BA210BCFA90022AEAE /* CustomNavController.m */; };
 		B197F831210A6E10004805D8 /* BTSideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F830210A6E10004805D8 /* BTSideTableViewController.m */; };
 		B197F83C210A7D40004805D8 /* BTAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83B210A7D40004805D8 /* BTAddBookViewController.m */; };
 		B197F83F210A8113004805D8 /* BTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83E210A8113004805D8 /* BTLoginViewController.m */; };
@@ -56,6 +57,8 @@
 		A4526258210B9FBA00811262 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Shelfie/Services/User.m; sourceTree = SOURCE_ROOT; };
 		A4CDB86F210B90C300203822 /* FBLoginAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLoginAPI.h; sourceTree = "<group>"; };
 		A4CDB870210B90C300203822 /* FBLoginAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLoginAPI.m; sourceTree = "<group>"; };
+		B11D37B9210BCFA90022AEAE /* CustomNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavController.h; sourceTree = "<group>"; };
+		B11D37BA210BCFA90022AEAE /* CustomNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavController.m; sourceTree = "<group>"; };
 		B197F82F210A6E10004805D8 /* BTSideTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSideTableViewController.h; sourceTree = "<group>"; };
 		B197F830210A6E10004805D8 /* BTSideTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSideTableViewController.m; sourceTree = "<group>"; };
 		B197F83A210A7D40004805D8 /* BTAddBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAddBookViewController.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				A4526253210B9B0800811262 /* SWRevealViewController */,
+				B11D37B9210BCFA90022AEAE /* CustomNavController.h */,
+				B11D37BA210BCFA90022AEAE /* CustomNavController.m */,
 				CECB9B97210A4E3C001D2032 /* BTHomeViewController.h */,
 				B197F83A210A7D40004805D8 /* BTAddBookViewController.h */,
 				B197F83B210A7D40004805D8 /* BTAddBookViewController.m */,
@@ -224,7 +229,6 @@
 				B197F845210A82F5004805D8 /* Models */,
 				CECB9B9A210A4E3C001D2032 /* Main.storyboard */,
 				CECB9B9D210A4E3D001D2032 /* Assets.xcassets */,
-				B197F84C210A9C47004805D8 /* Screen Shot 2018-07-26 at 5.13.22 PM.png */,
 				CECB9B9F210A4E3D001D2032 /* LaunchScreen.storyboard */,
 				CECB9BA2210A4E3D001D2032 /* Info.plist */,
 				CECB9BA3210A4E3D001D2032 /* main.m */,
@@ -357,7 +361,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B197F84D210A9C48004805D8 /* Screen Shot 2018-07-26 at 5.13.22 PM.png in Resources */,
 				CECB9BA1210A4E3D001D2032 /* LaunchScreen.storyboard in Resources */,
 				CECB9B9E210A4E3D001D2032 /* Assets.xcassets in Resources */,
 				CECB9B9C210A4E3C001D2032 /* Main.storyboard in Resources */,
@@ -466,10 +469,12 @@
 				B197F831210A6E10004805D8 /* BTSideTableViewController.m in Sources */,
 				CECB9B99210A4E3C001D2032 /* BTHomeViewController.m in Sources */,
 				B197F842210A8254004805D8 /* BTProfileViewController.m in Sources */,
+				A4526252210B9A1B00811262 /* SWRevealViewController.m in Sources */,
 				B197F83F210A8113004805D8 /* BTLoginViewController.m in Sources */,
 				CECB9BA4210A4E3D001D2032 /* main.m in Sources */,
 				A4526256210B9B0800811262 /* SWRevealViewController.m in Sources */,
 				CECB9B96210A4E3C001D2032 /* AppDelegate.m in Sources */,
+				B11D37BB210BCFA90022AEAE /* CustomNavController.m in Sources */,
 				B197F83C210A7D40004805D8 /* BTAddBookViewController.m in Sources */,
 				A4CDB871210B90C300203822 /* FBLoginAPI.m in Sources */,
 			);
