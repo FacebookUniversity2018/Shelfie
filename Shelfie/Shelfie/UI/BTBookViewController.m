@@ -11,6 +11,20 @@
 
 @interface BTBookViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@property (strong, nonatomic) IBOutlet UIImageView *bookCover;
+@property (strong, nonatomic) IBOutlet UILabel *authorLabel;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UIButton *tradeButton;
+@property (strong, nonatomic) IBOutlet UIButton *giftButton;
+@property (strong, nonatomic) IBOutlet UIButton *sellButton;
+@property (strong, nonatomic) IBOutlet UIButton *currentLocation;
+
+
+@property (nonatomic, assign) BOOL sell;
+@property (nonatomic, assign) BOOL trade;
+@property (nonatomic, assign) BOOL gift;
+@property (nonatomic, assign) BOOL location;
+@property (nonatomic, assign) BOOL own;
 
 @end
 
@@ -29,10 +43,48 @@
 }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)useCurrentLocation:(id)sender {
+
+    if (!self.location) {
+        self.location = true;
+        [self.currentLocation setImage:[UIImage imageNamed:@"iconmonstr-circle-1-240.png"] forState:UIControlStateNormal];
+    } else if (self.location) {
+        self.location = false;
+        [self.currentLocation setImage:[UIImage imageNamed:@"iconmonstr-circle-thin-32.png"] forState:UIControlStateNormal];
+        //set book location with defaults
+    }
 }
+- (IBAction)sellClicked:(id)sender {
+
+    if (!self.sell) {
+        self.sell = true;
+        [self.sellButton setImage:[UIImage imageNamed:@"iconmonstr-circle-1-240.png"] forState:UIControlStateNormal];
+    } else if (self.sell) {
+        self.sell = false;
+        [self.sellButton setImage:[UIImage imageNamed:@"iconmonstr-circle-thin-32.png"] forState:UIControlStateNormal];
+    }
+}
+- (IBAction)tradeClicked:(id)sender {
+
+    if (!self.trade) {
+        self.trade = true;
+        [self.tradeButton setImage:[UIImage imageNamed:@"iconmonstr-circle-1-240.png"] forState:UIControlStateNormal];
+    } else if (self.trade) {
+        self.trade = false;
+        [self.tradeButton setImage:[UIImage imageNamed:@"iconmonstr-circle-thin-32.png"] forState:UIControlStateNormal];
+    }
+}
+- (IBAction)giftClicked:(id)sender {
+    if (!self.gift) {
+        self.gift = true;
+        [self.giftButton setImage:[UIImage imageNamed:@"iconmonstr-circle-1-240.png"] forState:UIControlStateNormal];
+    } else if (self.gift) {
+        self.gift = false;
+        [self.giftButton setImage:[UIImage imageNamed:@"iconmonstr-circle-thin-32.png"] forState:UIControlStateNormal];
+    }
+}
+
 
 /*
 #pragma mark - Navigation
