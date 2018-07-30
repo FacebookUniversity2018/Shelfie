@@ -1,5 +1,5 @@
 //
-//  BTAddBookViewController.h
+//  BTBookViewController.h
 //  Shelfie
 //
 //  Created by Claudia Haddad on 7/26/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BTAddBookViewController : UIViewController
+@interface BTBookViewController : UIViewController
 
 @end

@@ -1,20 +1,20 @@
 //
-//  BTAddBookViewController.m
+//  BTBookViewController.m
 //  Shelfie
 //
 //  Created by Claudia Haddad on 7/26/18.
 //  Copyright © 2018 BookTrader. All rights reserved.
 //
 
-#import "BTAddBookViewController.h"
+#import "BTBookViewController.h"
 #import "SWRevealViewController.h"
 
-@interface BTAddBookViewController ()
+@interface BTBookViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
 @end
 
-@implementation BTAddBookViewController
+@implementation BTBookViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
