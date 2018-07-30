@@ -21,6 +21,7 @@
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     // Optional: Place the button in the center of your view.
     loginButton.center = self.view.center;
+    loginButton.readPermissions = @[@"public_profile"];
     [self.view addSubview:loginButton];
     
 }
@@ -30,6 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onClick:(id)sender {
+    
+    
     [self performSegueWithIdentifier:@
      "loginToHome" sender:self];
 }

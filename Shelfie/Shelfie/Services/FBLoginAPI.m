@@ -8,6 +8,24 @@
 
 #import "FBLoginAPI.h"
 
+@interface FBLoginAPI()
+
+//@property (nonatomic) FBSDKLoginManager *login;
+
+@end
+
 @implementation FBLoginAPI
+
+/*
+
++ (instancetype) shared {
+    static FBLoginAPI *sharedManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedManager = [[self alloc] init];
+    });
+    return sharedManager;
+}
+ */
 
 @end

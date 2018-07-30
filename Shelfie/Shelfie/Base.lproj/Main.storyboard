@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS2-P1-zIo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS2-P1-zIo" userLabel="LOGIN" customClass="FBSDKButton">
                                 <rect key="frame" x="164" y="338" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -31,6 +31,7 @@
                         <viewLayoutGuide key="safeArea" id="Kuy-12-jYO"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="PS2-P1-zIo" id="qsr-DS-TAC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginToHome" id="lmB-lM-JkE"/>
                     </connections>
                 </viewController>
