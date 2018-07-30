@@ -18,7 +18,6 @@
 		B197F83C210A7D40004805D8 /* BTAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83B210A7D40004805D8 /* BTAddBookViewController.m */; };
 		B197F83F210A8113004805D8 /* BTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F83E210A8113004805D8 /* BTLoginViewController.m */; };
 		B197F842210A8254004805D8 /* BTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B197F841210A8254004805D8 /* BTProfileViewController.m */; };
-		B197F84D210A9C48004805D8 /* Screen Shot 2018-07-26 at 5.13.22 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = B197F84C210A9C47004805D8 /* Screen Shot 2018-07-26 at 5.13.22 PM.png */; };
 		CECB9B96210A4E3C001D2032 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB9B95210A4E3C001D2032 /* AppDelegate.m */; };
 		CECB9B99210A4E3C001D2032 /* BTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECB9B98210A4E3C001D2032 /* BTHomeViewController.m */; };
 		CECB9B9C210A4E3C001D2032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECB9B9A210A4E3C001D2032 /* Main.storyboard */; };
@@ -67,7 +66,6 @@
 		B197F83E210A8113004805D8 /* BTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTLoginViewController.m; sourceTree = "<group>"; };
 		B197F840210A8254004805D8 /* BTProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTProfileViewController.h; sourceTree = "<group>"; };
 		B197F841210A8254004805D8 /* BTProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTProfileViewController.m; sourceTree = "<group>"; };
-		B197F84C210A9C47004805D8 /* Screen Shot 2018-07-26 at 5.13.22 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-07-26 at 5.13.22 PM.png"; sourceTree = "<group>"; };
 		B736291ADBF925B02B3946E1 /* Pods-ShelfieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelfieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShelfieTests/Pods-ShelfieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B92B7D26D69A1813814CB93A /* libPods-ShelfieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShelfieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC44DE9E9A4AAE0149BBFBD3 /* Pods-Shelfie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelfie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shelfie/Pods-Shelfie.release.xcconfig"; sourceTree = "<group>"; };
@@ -469,7 +467,6 @@
 				B197F831210A6E10004805D8 /* BTSideTableViewController.m in Sources */,
 				CECB9B99210A4E3C001D2032 /* BTHomeViewController.m in Sources */,
 				B197F842210A8254004805D8 /* BTProfileViewController.m in Sources */,
-				A4526252210B9A1B00811262 /* SWRevealViewController.m in Sources */,
 				B197F83F210A8113004805D8 /* BTLoginViewController.m in Sources */,
 				CECB9BA4210A4E3D001D2032 /* main.m in Sources */,
 				A4526256210B9B0800811262 /* SWRevealViewController.m in Sources */,
@@ -648,13 +645,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV6X26527X;
+				DEVELOPMENT_TEAM = XH4CA68YP4;
 				INFOPLIST_FILE = Shelfie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Shelfie;
+				PRODUCT_BUNDLE_IDENTIFIER = SHid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,13 +665,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KV6X26527X;
+				DEVELOPMENT_TEAM = XH4CA68YP4;
 				INFOPLIST_FILE = Shelfie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Shelfie;
+				PRODUCT_BUNDLE_IDENTIFIER = SHid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
