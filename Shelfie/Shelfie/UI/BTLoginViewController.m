@@ -7,8 +7,7 @@
 //
 
 #import "BTLoginViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "FBLoginAPI.h"
 
 @interface BTLoginViewController ()
 
@@ -18,21 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    // Optional: Place the button in the center of your view.
-    loginButton.center = self.view.center;
-    //loginButton.readPermissions = @[@"public_profile"];
-    [self.view addSubview:loginButton];
     
+    //Handle clicks on the login/logout button
+    [self.loginButton addTarget : self action : @selector (onLoginClicked) forControlEvents : UIControlEventTouchUpInside ];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)onClick:(id)sender {
+
+- (void) onLoginClicked {
+    [[FBLoginAPI shared] login: self];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    // If there is a current session going
+    if([FBSDKAccessToken currentAccessToken]) {
+        [self performSegueWithIdentifier:@"loginToHome" sender:self];
+    }
     
-    [self performSegueWithIdentifier:@"loginToHome" sender:self];
 }
 
 /*

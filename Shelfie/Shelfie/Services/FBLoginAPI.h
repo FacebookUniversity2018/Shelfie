@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-// #import "User.h"
+#import "BTLoginViewController.h"
+
 
 @interface FBLoginAPI : NSObject
+
++ (instancetype) shared;
+
+- (void) login: (BTLoginViewController *) loginController;
 
 @end
