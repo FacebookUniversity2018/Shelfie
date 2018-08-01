@@ -7,6 +7,7 @@
 //
 
 #import "BTFbAPIManager.h"
+#import "BTUserManager.h"
 
 @implementation BTFbAPIManager
 
@@ -51,16 +52,17 @@
     if ([FBSDKAccessToken currentAccessToken ]) {
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"name, picture"}]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-             if (!error) {
+             if (!error) { // Initiate FBUser using JSONModel
                  NSLog(@"User dictionary after log in:%@", result);
-                 // Initiate user
+                 // getFBUser pass on FBUser to User manager
+                 FBUser *fbUser = [[FBUser alloc] initWithDictionary:result error:nil];
+                 [[BTUserManager shared] FBUserExists:fbUser];
              }
          }];
         
     }
     
 }
-
 
 
 @end
