@@ -37,7 +37,6 @@
     if([FBSDKAccessToken currentAccessToken]) {
         //[self performSegueWithIdentifier:@"loginToHome" sender:self];
     }
-    
 }
 
 /*
