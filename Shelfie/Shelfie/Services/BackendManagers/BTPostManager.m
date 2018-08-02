@@ -20,8 +20,8 @@
 }
 
 
-+ (void) addBookToDatabaseWithUserId:(NSString *)userId title:(NSString *)title author:(NSString *)author
-                                isbn:(NSString *)isbn date:(NSDate *)date coverURL:(NSURL *)coverURL
+- (void) addBookToDatabaseWithUserId:(NSString *)userId title:(NSString *)title author:(NSString *)author
+                                isbn:(NSString *)isbn date:(NSString *)date coverURL:(NSURL *)coverURL
                             latitude:(NSNumber *)latitude longitude:(NSNumber *)longitude
                           completion:(PFBooleanResultBlock)completion {
     BTBook *book = [BTBook new];
@@ -35,4 +35,6 @@
     book.longitude = longitude;
     [book saveInBackgroundWithBlock:completion];
 };
+
+
 @end
